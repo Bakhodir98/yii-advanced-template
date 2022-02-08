@@ -3,8 +3,11 @@ version: '3'
 services:
   nginx:
     image: nginx
+    container_name: tmp_nginx
     ports:
       - "80:80"
+      - "8001:8001"
+      - "8002:8002"
     depends_on:
       - php
     volumes:
@@ -13,10 +16,16 @@ services:
   php:
     build:
       context: ./docker/php
+    container_name: tmp_php
     volumes:
       - ./:/var/www/html
+    environment:
+      - DB_NAME=template
+      - DB_USER=user
+      - DB_PASSWORD=secret
   db:
     image: mysql
+    container_name: tmp_mysql
     ports:
       - "3306:3306"
     environment:
@@ -28,6 +37,7 @@ services:
       - ./docker/database:/var/lib/mysql
   adminer:
     image: adminer
+    container_name: tmp_adminer
     restart: always
     ports:
-      - "8080:8080"
+      - "8081:8080"
