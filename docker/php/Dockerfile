@@ -11,4 +11,4 @@ COPY cmd.sh .
 RUN chmod u+x cmd.sh
 
 WORKDIR /var/www/html
-ENTRYPOINT ["/tmp/cmd.sh", "container running"]
+CMD ["bash","/tmp/cmd.sh"]
