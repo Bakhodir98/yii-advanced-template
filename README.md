@@ -10,22 +10,18 @@ If you work on Windows use make.bat command instead of make in the commands belo
 ```
 Build environment
 ```
-cd docker
 make env-up
 ```
 Start
 ```
-cd docker
 make env-start
 ```
 Stop
 ```
-cd docker
 make env-stop
 ```
 Down
 ```
-cd docker
 make env-down
 ```
 Attach
@@ -33,11 +29,9 @@ Attach
 Attach local standard input, output to a container in which php:7.4-fpm is working. Required to install Composer packages, generating and executing database migrations etc.
 ```
 ```
-cd docker
 make php-attach
 ```
 Logs
 ```
-cd docker
 make php-logs
 ```
