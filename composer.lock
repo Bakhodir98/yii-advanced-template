@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "ec8cd0edd3f1920875ad34bd90e613bf",
+=======
+    "content-hash": "87feaa5976d12308c231cef2baaa0290",
+>>>>>>> 33e6ec706c25804ed46e1cceb2b829888e9a4c38
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -32,7 +36,7 @@
             "version": "3.3.11",
             "source": {
                 "type": "git",
-                "url": "git@github.com:RobinHerbots/Inputmask.git",
+                "url": "https://github.com/RobinHerbots/Inputmask.git",
                 "reference": "5e670ad62f50c738388d4dcec78d2888505ad77b"
             },
             "dist": {
@@ -101,6 +105,68 @@
             "license": [
                 "MIT"
             ]
+        },
+        {
+            "name": "bshaffer/oauth2-server-php",
+            "version": "v1.11.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bshaffer/oauth2-server-php.git",
+                "reference": "5a0c8000d4763b276919e2106f54eddda6bc50fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bshaffer/oauth2-server-php/zipball/5a0c8000d4763b276919e2106f54eddda6bc50fa",
+                "reference": "5a0c8000d4763b276919e2106f54eddda6bc50fa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "~2.8",
+                "firebase/php-jwt": "~2.2",
+                "mongodb/mongodb": "^1.1",
+                "phpunit/phpunit": "^4.0",
+                "predis/predis": "dev-master",
+                "thobbs/phpcassa": "dev-master"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "~2.8 is required to use DynamoDB storage",
+                "firebase/php-jwt": "~2.2 is required to use JWT features",
+                "mongodb/mongodb": "^1.1 is required to use MongoDB storage",
+                "predis/predis": "Required to use Redis storage",
+                "thobbs/phpcassa": "Required to use Cassandra storage"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "OAuth2": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brent Shaffer",
+                    "email": "bshafs@gmail.com",
+                    "homepage": "http://brentertainment.com"
+                }
+            ],
+            "description": "OAuth2 Server for PHP",
+            "homepage": "http://github.com/bshaffer/oauth2-server-php",
+            "keywords": [
+                "auth",
+                "oauth",
+                "oauth2"
+            ],
+            "support": {
+                "issues": "https://github.com/bshaffer/oauth2-server-php/issues",
+                "source": "https://github.com/bshaffer/oauth2-server-php/tree/master"
+            },
+            "time": "2018-12-04T00:29:32+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -409,9 +475,83 @@
                 "performance"
             ],
             "support": {
+<<<<<<< HEAD
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/xdebug-handler/issues",
                 "source": "https://github.com/composer/xdebug-handler/tree/2.0.4"
+=======
+                "issues": "https://github.com/ezyang/htmlpurifier/issues",
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.14.0"
+            },
+            "time": "2021-12-25T01:21:49+00:00"
+        },
+        {
+            "name": "filsh/yii2-oauth2-server",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filsh/yii2-oauth2-server.git",
+                "reference": "3934cec6d6de9eb21d7a6ef5b31cadac281f3ad2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filsh/yii2-oauth2-server/zipball/3934cec6d6de9eb21d7a6ef5b31cadac281f3ad2",
+                "reference": "3934cec6d6de9eb21d7a6ef5b31cadac281f3ad2",
+                "shasum": ""
+            },
+            "require": {
+                "bshaffer/oauth2-server-php": "^1.7",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "filsh\\yii2\\oauth2server\\Bootstrap",
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "filsh\\yii2\\oauth2server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Maliy",
+                    "email": "imaliy.filsh@gmail.com"
+                },
+                {
+                    "name": "Vardan Pogosian",
+                    "email": "vardan.pogosyan@gmail.com"
+                }
+            ],
+            "description": "OAuth2 Server for PHP",
+            "homepage": "https://github.com/filsh/yii2-oauth2-server",
+            "keywords": [
+                "extension",
+                "module",
+                "oauth",
+                "oauth2",
+                "yii"
+            ],
+            "support": {
+                "email": "imaliy.filsh@gmail.com",
+                "issues": "https://github.com/filsh/yii2-oauth2-server/issues",
+                "source": "https://github.com/filsh/yii2-oauth2-server"
+            },
+            "time": "2020-10-19T10:36:03+00:00"
+        },
+        {
+            "name": "npm-asset/bootstrap",
+            "version": "4.6.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/bootstrap/-/bootstrap-4.6.1.tgz"
+>>>>>>> 33e6ec706c25804ed46e1cceb2b829888e9a4c38
             },
             "funding": [
                 {
@@ -756,8 +896,16 @@
                 }
             },
             "autoload": {
+<<<<<<< HEAD
                 "psr-4": {
                     "Egulias\\EmailValidator\\": "src"
+=======
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+>>>>>>> 33e6ec706c25804ed46e1cceb2b829888e9a4c38
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -842,6 +990,7 @@
             "time": "2021-12-25T01:21:49+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "friendsofphp/php-cs-fixer",
             "version": "v2.19.3",
             "source": {
@@ -853,6 +1002,19 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/75ac86f33fab4714ea5a39a396784d83ae3b5ed8",
                 "reference": "75ac86f33fab4714ea5a39a396784d83ae3b5ed8",
+=======
+            "name": "yiisoft/yii2",
+            "version": "2.0.45",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-framework.git",
+                "reference": "e2223d4085e5612aa616635f8fcaf478607f62e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/e2223d4085e5612aa616635f8fcaf478607f62e8",
+                "reference": "e2223d4085e5612aa616635f8fcaf478607f62e8",
+>>>>>>> 33e6ec706c25804ed46e1cceb2b829888e9a4c38
                 "shasum": ""
             },
             "require": {
@@ -929,8 +1091,48 @@
             ],
             "authors": [
                 {
+<<<<<<< HEAD
                     "name": "Fabien Potencier",
                     "email": "fabien@symfony.com"
+=======
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com",
+                    "homepage": "https://www.yiiframework.com/",
+                    "role": "Founder and project lead"
+                },
+                {
+                    "name": "Alexander Makarov",
+                    "email": "sam@rmcreative.ru",
+                    "homepage": "https://rmcreative.ru/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Maurizio Domba",
+                    "homepage": "http://mdomba.info/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc",
+                    "homepage": "https://www.cebe.cc/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Timur Ruziev",
+                    "email": "resurtm@gmail.com",
+                    "homepage": "http://resurtm.com/",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com",
+                    "role": "Core framework development"
+                },
+                {
+                    "name": "Dmitry Naumenko",
+                    "email": "d.naumenko.a@gmail.com",
+                    "role": "Core framework development"
+>>>>>>> 33e6ec706c25804ed46e1cceb2b829888e9a4c38
                 },
                 {
                     "name": "Dariusz Rumiński",
@@ -939,8 +1141,16 @@
             ],
             "description": "A tool to automatically fix PHP code style",
             "support": {
+<<<<<<< HEAD
                 "issues": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues",
                 "source": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/tree/v2.19.3"
+=======
+                "forum": "https://forum.yiiframework.com/",
+                "irc": "ircs://irc.libera.chat:6697/yii",
+                "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+                "source": "https://github.com/yiisoft/yii2",
+                "wiki": "https://www.yiiframework.com/wiki"
+>>>>>>> 33e6ec706c25804ed46e1cceb2b829888e9a4c38
             },
             "funding": [
                 {
@@ -948,7 +1158,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
             "time": "2021-11-15T17:17:55+00:00"
+=======
+            "time": "2022-02-11T13:12:40+00:00"
+>>>>>>> 33e6ec706c25804ed46e1cceb2b829888e9a4c38
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -5279,6 +5493,7 @@
             "time": "2020-11-30T08:20:02+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "phpunit/php-token-stream",
             "version": "4.0.4",
             "source": {
@@ -5290,6 +5505,19 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/a853a0e183b9db7eed023d7933a858fa1c8d25a3",
                 "reference": "a853a0e183b9db7eed023d7933a858fa1c8d25a3",
+=======
+            "name": "sebastian/global-state",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/global-state.git",
+                "reference": "de036ec91d55d2a9e0db2ba975b512cdb1c23921"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/de036ec91d55d2a9e0db2ba975b512cdb1c23921",
+                "reference": "de036ec91d55d2a9e0db2ba975b512cdb1c23921",
+>>>>>>> 33e6ec706c25804ed46e1cceb2b829888e9a4c38
                 "shasum": ""
             },
             "require": {
@@ -5326,8 +5554,13 @@
                 "tokenizer"
             ],
             "support": {
+<<<<<<< HEAD
                 "issues": "https://github.com/sebastianbergmann/php-token-stream/issues",
                 "source": "https://github.com/sebastianbergmann/php-token-stream/tree/master"
+=======
+                "issues": "https://github.com/sebastianbergmann/global-state/issues",
+                "source": "https://github.com/sebastianbergmann/global-state/tree/3.0.2"
+>>>>>>> 33e6ec706c25804ed46e1cceb2b829888e9a4c38
             },
             "funding": [
                 {
@@ -5335,8 +5568,12 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
             "abandoned": true,
             "time": "2020-08-04T08:28:15+00:00"
+=======
+            "time": "2022-02-10T06:55:38+00:00"
+>>>>>>> 33e6ec706c25804ed46e1cceb2b829888e9a4c38
         },
         {
             "name": "phpunit/phpunit",
