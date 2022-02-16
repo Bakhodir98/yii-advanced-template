@@ -9,7 +9,7 @@ env-stop:
 env-down:
 	docker-compose down
 php-attach:
-	docker-compose exec tmp_php bash
+	docker exec -it tmp_php bash
 php-logs:
 	docker-compose logs -f php
 migrate-up:
